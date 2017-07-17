@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: "Roboto Slab", "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+::selection {
+    background: #009688;
+    /* WebKit/Blink Browsers */
+    color: white;
+}
+
+::-moz-selection {
+    background: #009688;
+    /* Gecko Browsers */
+    color: white;
+}
+
+body {
+    word-wrap: break-word;
+    /*background-image: url(../img/diego-jimenez-258120.jpg);
+    background-size: cover;*/
+}
+
+.settingsButton {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+}
+
+.mega_h1 {
+    font-size: 9vw;
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+.tealColor {
+    color: #009688;
+}
+
+.display {
+    display: block !important;
+}
+
+.buttons {
+    margin-left: 16px;
+    margin-top: 16px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.multiple {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #009688;
+    display: none;
+}
+
+.totalSpins {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+}
+
+.refreshed {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.results {
+    width: calc(100vw - 32px);
+    max-height: 200px;
+    overflow: auto;
+    background-color: whitesmoke;
+    margin: auto;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.rulesButton {
+    bottom: 48px;
+    right: 16px;
+    position: fixed;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.rule ul {
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.rules,
+.settings {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: auto;
+    display: none;
+    border-radius: 3px;
+}
+
+.rule {
+    margin: 16px;
+}
+
+#ruleHeader {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rulesHeader a h3 {
+    color: #009688;
+}
+
+@media (min-width: 400px) {
+    .mega_h1 {
+        font-size: 8vw;
+    }
+    .results {
+        background-color: white;
+    }
+}
+
+@media (min-width: 1100px) {
+    .buttons {
+        flex-direction: row;
+        margin-left: 64px;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        margin-top: 0;
+    }
+    h2 {
+        /* color: rgba(0, 0, 0, 0.4);  */
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 100px;
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        background-color: rgba(0, 0, 0, 0.54);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .mega_h1 {
+        margin-left: 64px;
+        margin-top: 128px;
+    }
+    .results {
+        margin-left: 80px;
+        padding-left: 0px;
+        padding-top: 64px;
+        width: auto;
+    }
+    .rules,
+    .settings {
+        margin-top: 32px;
+        width: 800px;
+        height: calc(100vh - 32px);
+        background-color: white;
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        /*Shadow*/
+        -webkit-box-shadow: 0px 20px 174px 5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 20px 174px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 20px 174px 5px rgba(0, 0, 0, 0.75);
+    }
+}

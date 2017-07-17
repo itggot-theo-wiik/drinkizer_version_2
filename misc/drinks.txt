@@ -1,0 +1,23 @@
+Sprite
+Sprite Zero
+Coca Cola
+Coca Cola Cherry
+Pepsi
+Mountain Dew (Burk)
+Mountain Dew (Flaska)
+Trocadero (Burk)
+Trocadero (Flaska)
+Aloe Vera
+Celsius
+Fanta
+Festis
+MER
+Froosh
+Snapple*
+Loka Crush (Burk)
+Loka Crush (Flaska)
+Nocco
+Pago Juice
+Kaffe (Liten)
+Kaffe (Stor)
+Te

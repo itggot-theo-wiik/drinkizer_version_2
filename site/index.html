@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="./img/">
+    <title>Drinkizer2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body onload="typeWriter()">
+    <!-- <audio id="audio" src="./audio/hihat3.wav" autostart="false"></audio> -->
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <!--
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+
+    <div class="settingsButton">
+        <a href="#">
+            <i class="material-icons" onclick="settings()">settings</i>
+        </a>
+    </div>
+
+    <div class="settings">
+        <div id="ruleHeader">
+            <h1>Drinkizer Alpha</h1>
+
+            <a href="#">
+                <i class="material-icons" onclick="settings()">close</i>
+            </a>
+        </div>
+        <div class="rule">
+            <h2>Saknas</h2>
+            <p>Det finns mycket som måste göras:</p>
+            <ul>
+                <li>Gör logg in system</li>
+                <li class="line-trough">Ficksa dessa bullet points</li>
+                <li>Dessa dialoger, gör att dem använder samma JS</li>
+                <li class="line-trough">Ficksa en klass så man kan stryka över dessa</li>
+                <li>Good Boi Points</li>
+                <li>En random färg då man startar</li>
+                <li>Animera drickorna då dem snurrar</li>
+                <li>Gör så att man inte kan trycka på Rules då settings sidan är uppe</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="test">
+        <h1 class="mega_h1"></h1>
+    </div>
+
+    <div class="buttons">
+        <a href="#" onclick="which_drink(false)">
+            <h2>Single Spin</h2>
+        </a>
+
+        <div class="dot"></div>
+
+        <a href="#">
+            <h2>Multiple Spin (Experimental)</h2>
+        </a>
+
+        <div class="dot"></div>
+
+        <a href="#" onclick="which_drink(true)">
+            <h2>Laktosfri</h2>
+        </a>
+    </div>
+
+    <div class="rulesButton">
+        <a href="#">
+            <h3 onclick="rules()">Rules</h3>
+        </a>
+    </div>
+
+    <div class="multiple">
+        <form id="frm1">
+            First name: <input type="text" name="fname"><br> Last name: <input type="text" name="lname"><br><br>
+            <input type="button" onclick="formFunction()" value="Submit">
+        </form>
+    </div>
+
+    <div class="totalSpins"></div>
+    <div class="refreshed"></div>
+
+    <div class="results">
+        <h3>History</h3>
+    </div>
+
+    <div class="rules">
+        <div id="ruleHeader">
+            <h1>Regler</h1>
+
+            <a href="#">
+                <i class="material-icons" onclick="rules()">close</i>
+            </a>
+        </div>
+        <div class="rule">
+            <h2>Introduktion</h2>
+            <p>Känner du att du har för mycket frihet? Det gjorde vi också, därför skapade vi FikaDags©!<br><br>Med FikaDags©
+                kan du ta reda på om det är fika, samt vad du ska köpa (alpha).</p>
+        </div>
+        <div class="rule">
+            <h2>Boints© (Good Boi Points)</h2>
+            <p>Boints© är en valuta som kan gynna dig.</p>
+        </div>
+        <!--FILLER START-->
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <div class="rule">
+            <h2>Header</h2>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first
+                game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses,
+                aiming to complete enough objectives to continue to further rounds.</p>
+        </div>
+        <!--FILLER END-->
+    </div>
+
+</body>
+
+</html>
