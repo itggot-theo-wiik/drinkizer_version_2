@@ -51,6 +51,14 @@ async function which_drink(laktos) {
         }
         element.classList.add("tealColor");
 
+        // BLUR START
+
+        // element.classList.toggle("blurry-text");
+        // await sleep(2000);
+        // element.classList.toggle("blurry-text");
+
+        // BLUR END
+
         totalSpins += 1;
         console.log(totalSpins);
 
@@ -79,6 +87,22 @@ async function which_drink(laktos) {
 function formFunction() {
     var hello = document.getElementById("frm1").submit();
     console.log(hello)
+}
+
+function amountUsers() {
+    var person = prompt("Hur många skall dricka?", "1");
+    console.log(parseInt(person))
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+        i = 0;
+        while (i < parseInt(person)) {
+            i += 1;
+            output = "hello ";
+            $("#demo").append(output);
+            console.log("idjasijdsa");
+        }
+    }
 }
 
 if (window.performance) {
