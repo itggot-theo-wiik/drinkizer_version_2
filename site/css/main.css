@@ -63,6 +63,7 @@ body {
     top: 0;
     left: 0;
     background-color: white;
+    display: none;
 }
 
 .totalSpins {
@@ -81,7 +82,7 @@ body {
     width: calc(100vw - 32px);
     max-height: 200px;
     overflow: auto;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     margin: auto;
     padding-left: 16px;
     padding-top: 8px;
@@ -142,12 +143,18 @@ body {
     color: #009688;
 }
 
+.HELL {
+    /* background-image: url(../img/fire.jpg);
+    background-size: cover; */
+    background-color: #E57373;
+}
+
 @media (min-width: 400px) {
     .mega_h1 {
         font-size: 8vw;
     }
     .results {
-        background-color: white;
+        /* background-color: white; */
     }
 }
 

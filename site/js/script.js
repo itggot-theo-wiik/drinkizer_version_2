@@ -4,7 +4,6 @@ function sleep(ms) {
 
 function shower() {
     element = document.querySelector(".results");
-    console.log(element)
     element.classList.add("display");
 }
 
@@ -12,15 +11,11 @@ async function typeWriter() {
     quote = "Which Drink?";
 
     loops = 0;
-
-    console.log(quote.length);
     while (loops < quote.length) {
         $(".mega_h1").append(quote[loops]);
         await sleep(100);
         loops += 1;
     }
-    // var sound = document.getElementById("audio");
-    // sound.play();
 }
 
 totalSpins = 0;
@@ -36,18 +31,21 @@ async function which_drink(laktos) {
         element.classList.remove("tealColor");
 
         if (laktos) {
-            console.log("Det är den laktosfria")
             var drinks = ["Not Mjölk", "Inte mjölk i alla fall...", "Yoggi Yalla / Drick kvarg"]
         } else {
-            console.log("Det är den med mjölk")
             var drinks = ["Sprite", "Sprite Zero", "Powerking", "Zingo", "Zingo Passion", "Dr Pepper", "Mountain Dew Burk", "Mountain Dew Flaska", "Trocadero Burk", "Trodacera Flaska", "Aloe Vera", "Vatten", "Eget val"];
         }
 
-        while (i < 15) {
-            await sleep(120);
+        sleepTime = 1;
+        // 34 SNURR
+        while (i < 34) {
+            await sleep(Math.pow(1.2, sleepTime) + 60);
+            sleepTime += 1;
             var random = Math.floor(Math.random() * (drinks.length));
             $('.mega_h1').html(drinks[random]);
             i += 1;
+            // var sound = document.getElementById("audio");
+            // sound.play();
         }
         element.classList.add("tealColor");
 
@@ -60,14 +58,36 @@ async function which_drink(laktos) {
         // BLUR END
 
         totalSpins += 1;
-        console.log(totalSpins);
 
         if (laktos) {
-            console.log("Det är den laktosfria")
             output = "<div>" + totalSpins.toString() + ") " + drinks[random].toString() + "*" + "</div>";
         } else {
-            console.log("Det är den med mjölk")
             output = "<div>" + totalSpins.toString() + ") " + drinks[random].toString() + "</div>";
+        }
+
+        doubleTrouble = (Math.floor(Math.random() * 10) + 1);
+        console.log(doubleTrouble);
+
+        if (doubleTrouble == 1) {
+            quote = "Oops...";
+            await sleep(2000)
+            $('.mega_h1').html("");
+
+            loops = 0;
+            while (loops < quote.length) {
+                $(".mega_h1").append(quote[loops]);
+                await sleep(100);
+                loops += 1;
+            }
+            await sleep(2000)
+            element = document.querySelector("body");
+            element.classList.toggle("HELL");
+            await sleep(2000)
+            $('.mega_h1').html("Stor Kaffe");
+            await sleep(2000)
+            element.classList.toggle("HELL");
+
+            output = "<div>" + totalSpins.toString() + ") " + "Stor Kaffe" + "</div>";
         }
 
         $(".results").append(output);
@@ -86,21 +106,18 @@ async function which_drink(laktos) {
 
 function formFunction() {
     var hello = document.getElementById("frm1").submit();
-    console.log(hello)
 }
 
 function amountUsers() {
     var person = prompt("Hur många skall dricka?", "1");
-    console.log(parseInt(person))
     if (person != null) {
         document.getElementById("demo").innerHTML =
-        "Hello " + person + "! How are you today?";
+            "Hello " + person + "! How are you today?";
         i = 0;
         while (i < parseInt(person)) {
             i += 1;
             output = "hello ";
             $("#demo").append(output);
-            console.log("idjasijdsa");
         }
     }
 }
